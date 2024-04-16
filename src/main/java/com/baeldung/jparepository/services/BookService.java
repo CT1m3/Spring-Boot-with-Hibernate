@@ -15,4 +15,7 @@ public class BookService {
     public List<Book> list(){
         return bookRepository.findAll();
     }
+    public void insertBook(Book book) {
+        bookRepository.insertEntity(book);
+    }
 }
